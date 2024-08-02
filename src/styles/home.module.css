@@ -1,0 +1,10 @@
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.searchBox {
+    top: 70%;
+    position: absolute;
+}
