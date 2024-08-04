@@ -1,6 +1,7 @@
 import Header from './../components/Header/Header'
 import SearchBox from './../components/SearchBox/SearchBox'
 import JobCard from '../components/JobCard/JobCard'
+import Button from '../components/Button/Button'
 import styles from './../styles/home.module.css'
 import data from './../assets/jobs.json'
 
@@ -28,6 +29,9 @@ const Home: React.FC = () => {
                         />
                     )
                 })}
+            </div >
+            <div className={styles.buttonContainer}>
+                <Button />
             </div>
         </>
     )

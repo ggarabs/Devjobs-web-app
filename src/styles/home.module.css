@@ -4,16 +4,24 @@
     position: relative;
 }
 
+.searchBox {
+    top: 70%;
+    position: absolute;
+}
+
 .contentContainer {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin-top: 4.5rem;
     gap: 24px;
 }
 
-.searchBox {
-    top: 70%;
-    position: absolute;
+.buttonContainer {
+    height: 142px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
 }
