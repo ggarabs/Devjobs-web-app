@@ -1,0 +1,22 @@
+{
+    "jobs": [
+        {
+            "id": 0,
+            "imagePath": "jobLogo.png",
+            "publicationTime": "5h ago",
+            "mode": "Full Time",
+            "title": "Senior Application Engineer",
+            "company": "Scoot",
+            "location": "United Kingdom"
+        },
+        {
+            "id": 1,
+            "imagePath": "jobLogo.png",
+            "publicationTime": "20h ago",
+            "mode": "Part Time",
+            "title": "Haskell and PureScript Dev",
+            "company": "Blogr",
+            "location": "United States"
+        }
+    ]
+}

@@ -7,6 +7,19 @@
     justify-content: center;
     height: 8.5rem;
     padding: 1rem;
+    position: relative;
+}
+
+.triangle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.triangle2 {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .container {

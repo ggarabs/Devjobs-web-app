@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    height: 253px;
+    width: 327px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 2rem;
+}
+
+.card {
+    align-self: flex-end;
+    padding: 3.0625rem 0 2.25rem 2rem;
+    width: 100%;
+    height: 14.25rem;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.jobMainInformation {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.jobInformation {
+    width: 9.37rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #6E8098;
+}
+
+.jobTime {
+    width: 3.31rem;
+}
+
+.jobModeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5.25rem;
+}
+
+.jobTitle {
+    font-size: 20px;
+}
+
+.jobCompany {
+    font-size: 1rem;
+    color: #6E8098;
+}
+
+.jobLocation {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5964E0;
+}
