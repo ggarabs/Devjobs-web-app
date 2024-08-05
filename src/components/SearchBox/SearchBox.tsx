@@ -12,12 +12,13 @@ const SearchBox: React.FC = () => {
     }
 
     const themeClass = styles[`${theme}-mode`] as keyof typeof styles
+    const filterImg = theme === 'light' ? 'greyFilter.png' : 'whiteFilter.png'
 
     return (
         <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.container}>
                 <input type="text" ref={inputRef} placeholder='Filter by Title...' className={`${styles.input} ${themeClass}`} />
-                <img src="filter.png" className={styles.filter} />
+                <img src={filterImg} className={styles.filter} />
                 <button type="submit" className={styles.button}>
                     <img src="magnifier.png" className={styles.img} />
                 </button>
@@ -26,4 +27,4 @@ const SearchBox: React.FC = () => {
     )
 }
 
-export default SearchBox
+export default SearchBox;

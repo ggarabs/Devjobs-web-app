@@ -8,6 +8,7 @@
     height: 8.5rem;
     padding: 1rem;
     position: relative;
+    overflow: hidden;
 }
 
 .triangle {
@@ -18,13 +19,13 @@
 
 .triangle2 {
     position: absolute;
-    right: 0;
+    left: 255px;
     top: 0;
 }
 
 .container {
     display: flex;
-    width: 327px;
+    width: 88.5vw;
     justify-content: space-between;
     margin-top: -2.8rem;
 }
