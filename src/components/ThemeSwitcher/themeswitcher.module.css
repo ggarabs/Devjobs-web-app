@@ -11,8 +11,8 @@
 }
 
 .rectangle {
-    all: unset;
     display: flex;
+    align-items: center;
     position: relative;
     cursor: pointer;
 }
@@ -24,11 +24,11 @@
 
 .blueCircle {
     position: absolute;
-    top: 50%;
-    transform: translate(25%, -50%);
-    transition: transform 0.3s ease;
+    left: 4px;
+    transition: transform 400ms ease;
+    transform: translateX(0);
 }
 
-.circle.move-right {
-    transform: translate(-25%, -50%);
+.dark-mode {
+    transform: translateX(26px);
 }

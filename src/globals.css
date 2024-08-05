@@ -9,8 +9,17 @@
 
 html,
 body {
-    background-color: #f4f6f8;
     font-family: "Kumbh Sans", sans-serif;
+}
+
+body.light-mode {
+    background-color: #f4f6f8;
+    color: #000;
+}
+
+body.dark-mode {
+    background-color: #121721;
+    color: #fff;
 }
 
 a {

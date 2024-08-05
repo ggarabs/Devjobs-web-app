@@ -1,4 +1,5 @@
 import styles from "./jobcard.module.css"
+import { useTheme } from "../../contexts/ThemeContext"
 
 interface JobCardProps {
     imagePath: string,
@@ -10,10 +11,14 @@ interface JobCardProps {
 }
 
 const JobCard = ({ imagePath, publicationTime, mode, title, company, location }: JobCardProps) => {
+    const { theme } = useTheme()
+
+    const themeClass = styles[`${theme}-mode`] as keyof typeof styles
+
     return (
         <div className={styles.container}>
             <img src={imagePath} className={styles.logo} />
-            <div className={styles.card}>
+            <div className={`${styles.card} ${themeClass}`}>
                 <div className={styles.jobMainInformation}>
                     <div className={styles.jobInformation}>
                         <p className={styles.jobTime}>{publicationTime}</p>
