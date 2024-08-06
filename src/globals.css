@@ -31,6 +31,9 @@ button,
 input,
 textarea,
 select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     font: inherit;
     border: none;
     outline: none;

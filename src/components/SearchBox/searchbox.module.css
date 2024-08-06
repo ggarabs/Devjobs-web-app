@@ -7,20 +7,39 @@
 .container {
     width: 88.5%;
     height: 80px;
-    position: relative;
     display: flex;
     align-items: center;
+    position: relative;
     border-radius: 6px;
+    background-color: #fff;
+}
+
+.titleContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.magnifierContainer {
+    display: none;
+}
+
+.locationContainer {
+    display: none;
+}
+
+.fullTimeModeContainer {
+    display: none;
 }
 
 .input {
     width: 100%;
     height: 100%;
     font-size: 16px;
-    background-color: #fff;
     color: #19202D;
     padding: 24px;
-    border-radius: 6px;
 }
 
 .button {
@@ -44,4 +63,78 @@
 .dark-mode {
     background-color: #19202D;
     color: #979797;
+}
+
+@media (width > 700px) {
+    .titleContainer {
+        width: auto;
+        border-right: 1px solid rgba(218, 224, 231, 0.795);
+        flex: 1;
+    }
+
+    .magnifierContainer {
+        display: flex;
+        margin-left: 24px;
+    }
+
+    .magnifierImg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .titleInput {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        color: #19202D;
+        padding: 24px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    .locationContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 24px;
+        border-right: 1px solid rgba(218, 224, 231, 0.795);
+        flex: 1;
+    }
+
+    .fullTimeModeContainer {
+        display: flex;
+        flex: 1;
+    }
+
+    .fullTimeCheckboxContainer {
+        display: flex;
+    }
+
+    .checkImgContainer {
+        margin-left: 20px;
+        margin-right: 1rem;
+    }
+
+    .checkbox {
+        width: 24px;
+        height: 24px;
+        background-color: rgba(218, 224, 231, 0.795);
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .label {
+        font-weight: bold;
+    }
+
+    .input {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        color: #19202D;
+        padding: 24px;
+    }
+
+    .filter {
+        display: none;
+    }
 }

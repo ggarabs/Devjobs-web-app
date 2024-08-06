@@ -25,3 +25,14 @@
     justify-content: center;
     padding-top: 2rem;
 }
+
+@media (width > 660px) {
+    .searchBox {
+        top: 74.5%;
+    }
+
+    .contentContainer {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+}
