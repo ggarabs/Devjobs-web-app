@@ -2,6 +2,7 @@
     display: flex;
     height: 253px;
     width: 327px;
+    margin-bottom: 29px;
     position: relative;
 }
 
@@ -38,7 +39,7 @@
 }
 
 .jobTime {
-    width: 3.76rem;
+    width: 3.85rem;
 }
 
 .jobModeContainer {

@@ -20,16 +20,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 6px;
 }
 
-.magnifierContainer {
-    display: none;
-}
-
-.locationContainer {
-    display: none;
-}
-
+.magnifierContainer,
+.locationContainer,
 .fullTimeModeContainer {
     display: none;
 }
@@ -40,6 +35,7 @@
     font-size: 16px;
     color: #19202D;
     padding: 24px;
+    border-radius: 6px;
 }
 
 .button {
@@ -65,11 +61,23 @@
     color: #979797;
 }
 
-@media (width > 700px) {
+.buttonLabel {
+    display: none;
+}
+
+@media (width > 770px) {
     .titleContainer {
         width: auto;
         border-right: 1px solid rgba(218, 224, 231, 0.795);
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
         flex: 1;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .titleContainer.dark-mode {
+        border-right: 1px solid rgba(114, 114, 114, 0.247);
     }
 
     .magnifierContainer {
@@ -93,6 +101,7 @@
     }
 
     .locationContainer {
+        height: 100%;
         display: flex;
         align-items: center;
         margin-left: 24px;
@@ -100,41 +109,79 @@
         flex: 1;
     }
 
+    .locationContainer.dark-mode {
+        border-right: 1px solid rgba(114, 114, 114, 0.247);
+    }
+
     .fullTimeModeContainer {
         display: flex;
+        align-items: center;
         flex: 1;
     }
 
     .fullTimeCheckboxContainer {
         display: flex;
+        align-items: center;
     }
 
     .checkImgContainer {
-        margin-left: 20px;
-        margin-right: 1rem;
+        display: flex;
+        margin-left: 18px;
+        margin-right: 14px;
     }
 
     .checkbox {
-        width: 24px;
-        height: 24px;
+        width: 23px;
+        height: 23px;
         background-color: rgba(218, 224, 231, 0.795);
         border-radius: 3px;
         cursor: pointer;
     }
 
+    .checkbox.dark-mode {
+        background-color: rgba(67, 68, 70, 0.795);
+    }
+
     .label {
         font-weight: bold;
+        font-size: 15px;
+    }
+
+    .label.dark-mode {
+        color: #fff;
+
     }
 
     .input {
         width: 100%;
         height: 100%;
         font-size: 16px;
-        color: #19202D;
         padding: 24px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     .filter {
         display: none;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #5964E0;
+        width: 80px;
+        height: 48px;
+        border-radius: 5px;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .buttonLabel {
+        display: flex;
+        color: #fff;
+        font-weight: bold;
     }
 }

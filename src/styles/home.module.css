@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 4.5rem;
-    gap: 24px;
+    gap: 11px;
 }
 
 .buttonContainer {
@@ -23,7 +23,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 27px;
 }
 
 @media (width > 660px) {

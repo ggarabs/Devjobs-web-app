@@ -34,12 +34,13 @@ const SearchBox: React.FC = () => {
                         <div className={styles.checkImgContainer}>
                             <input type="checkbox" id="fullTime" ref={inputRef} placeholder='Filter by Title...' className={`${styles.checkbox} ${themeClass}`} />
                         </div>
-                        <p className={styles.label}>Full Time</p>
+                        <p className={`${styles.label} ${themeClass}`}>Full Time</p>
                     </label>
                 </div>
                 <img src={filterImg} className={styles.filter} />
                 <button type="submit" className={styles.button}>
                     <img src="magnifier.png" className={styles.img} />
+                    <p className={styles.buttonLabel}>Search</p>
                 </button>
             </div>
         </form>
