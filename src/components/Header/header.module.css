@@ -23,6 +23,12 @@
     top: 0;
 }
 
+.triangle3 {
+    position: absolute;
+    left: 830px;
+    top: 0;
+}
+
 .container {
     display: flex;
     width: 88.5vw;
@@ -43,5 +49,12 @@
     .header {
         border-bottom-left-radius: 6.25rem;
         height: 10rem;
+    }
+}
+
+@media (width > 1000px) {
+    .container {
+        width: 77vw;
+        max-width: 70rem;
     }
 }

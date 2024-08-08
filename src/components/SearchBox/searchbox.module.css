@@ -185,3 +185,10 @@
         font-weight: bold;
     }
 }
+
+@media (width > 1000px) {
+    .container {
+        width: 77vw;
+        max-width: 70rem;
+    }
+}

@@ -7,7 +7,7 @@ import data from './../assets/jobs.json'
 
 const Home: React.FC = () => {
     return (
-        <>
+        <div className={styles.homePageComponent}>
             <div className={styles.headerContainer}>
                 <Header />
                 <div className={styles.searchBox}>
@@ -33,7 +33,7 @@ const Home: React.FC = () => {
             <div className={styles.buttonContainer}>
                 <Button />
             </div>
-        </>
+        </div>
     )
 }
 
